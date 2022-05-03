@@ -1,17 +1,12 @@
 Rails.application.routes.draw do
-  # resources :videos
-  # resources :follows
-  # resources :favorites
-  # resources :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
-
+  resources :videos
+  resources :follows
+  resources :favorites
+  resources :users
   resources :sessions, only: [:create]
   resources :registrations, only: [:create]
-  # delete :logout, to: "sessions#logout"
-  # get :logged_in, to: "sessions#logged_in"
+  delete :logout, to: "sessions#logout"
+  get :logged_in, to: "sessions#logged_in"
   root to: "static#home"
   
 end
