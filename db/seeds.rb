@@ -32,9 +32,9 @@ trailer4 = Video.create(url: 'http://www.youtube.com/watch?v=RW9G-edFuBI&ab_chan
                             thumbnail: 'https://img.youtube.com/vi/RW9G-edFuBI/maxresdefault.jpg',
                             category: 'comedy')
 
-trailer5 = Video.create(url: 'http://youtu.be/idu_LCBxjQo',
+trailer5 = Video.create(url: 'https://www.youtube.com/watch?v=idu_LCBxjQo',
                             title: 'Seth Rogens Hilarity for Charity',
-                            thumbnail: 'https://youtu.be/idu_LCBxjQo',
+                            thumbnail: 'https://img.youtube.com/vi/idu_LCBxjQo/maxresdefault.jpg',
                             category: 'comedy')
 
 trailer6 = Video.create(url: 'http://youtu.be/b9EkMc79ZSU',
