@@ -1,7 +1,12 @@
 class FollowsController < ApplicationController
 
     def index
-        follow = Follow.all
+        follows = Follow.all
+        render json: follows
+    end
+
+    def show
+        follow = Follow.find(params[:id])
         render json: follow
     end
 
@@ -17,6 +22,11 @@ class FollowsController < ApplicationController
         else
             render :new
         end
+    end
+
+    def destroy
+        follow = Follow.find(params[:id])
+        follow.destroy
     end
 
     private
