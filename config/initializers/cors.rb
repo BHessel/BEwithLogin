@@ -6,7 +6,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     
     allow do
         # this is where production goes
-        origin "https://netflix-movie-matcher.herokuapp.com/"
+        origins "https://netflix-movie-matcher.herokuapp.com/"
         resource "*", headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head], credentials: true
     end
 
