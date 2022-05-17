@@ -1,1 +1,1 @@
-web: rails server -e ${RACK_ENV:-production}
+web: rails server
