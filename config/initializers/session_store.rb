@@ -3,7 +3,8 @@ if Rails.env == "production"
     key: "_nmm_PROD",
     same_site: :none,
     secure: true,
-    domain: "https://netflixmoviematcher.herokuapp.com"
+    domain: :all,
+    tld_length: 3
 else
     Rails.application.config.session_store :cookie_store, key: "_nmm_BE"
 end
