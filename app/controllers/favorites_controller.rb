@@ -5,6 +5,11 @@ class FavoritesController < ApplicationController
         render json: favorites, include: ['user', 'video']
     end
 
+    def show
+        favorite = Favorite.find(params[:id])
+        render json: favorite
+    end
+
     def new
         favorite = Favorite.new
     end
